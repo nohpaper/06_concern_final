@@ -1,0 +1,867 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> 아주 특별한 후원 영수증 | 컨선월드와이드 </title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+        <meta name="title" content="아주 특별한 후원 영수증">
+        <meta name="description" content="컨선월드와이드 캠페인">
+        <meta name="keyword" content="컨선월드와이드, concern, concernworldwide, 컨선, 컨선월드와이드캠페인, 컨선월드와이드후원, 후원하기, 기부, 연말캠페인">
+        <meta name="Author" content="컨선월드와이드">
+        <meta name="robots" content="ALL">
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="아주 특별한 후원 영수증">
+        <meta property="og:description" content="우리의 관심은 특별한 변화를 만듭니다">
+        <meta property="og:image" content="https://campaign.concern.or.kr/specialreceipt/images/og_img.jpg">
+        <meta property="og:site_name" content="아주 특별한 후원 영수증 | 컨선월드와이드">
+
+
+
+        <link rel="shortcut icon" href="./images/favicon.png" type="image/png" />
+        <link rel="stylesheet" href="./stylesheets/css/common.css">
+        <script src="./javascripts/jquery-1.8.2.min.js"></script>
+        <script src="https://campaign.concern.or.kr/specialreceipt/javascripts/PLUGIN_Custom.js"></script>
+
+        <script>
+            var locationUrl= window.location.href;
+            var urlUtm;
+            urlUtm = locationUrl.split("?");
+            urlUtm = urlUtm[1];
+            var mUrl="./mobile/";
+            var userAgent = navigator.userAgent;
+            if (userAgent.match(/iPhone|Android|Windows CE|BlackBerry|Symbian|Windows Phone|webOS|Opera Mini|Opera Mobi|POLARIS|IEMobile|lgtelecom|LG|nokia|SonyEricsson/i) != null || userAgent.match(/LG|SAMSUNG|Samsung/) != null){
+                // mobile
+                if( urlUtm !== undefined ){
+                    mUrl=mUrl+"?"+urlUtm;
+                }
+                window.location.href = mUrl
+            }
+        </script>
+
+
+        <!-- Google Tag Manager -->
+        <script>
+            (function(w,d,s,l,i){
+                w[l]=w[l]||[];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event:'gtm.js'
+                });
+                var f=d.getElementsByTagName(s)[0],
+                    j=d.createElement(s),
+                    dl=l!='dataLayer'?'&l='+l:'';
+                j.async=true;
+                j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);
+            })(window,document,'script','dataLayer','GTM-KRZF4NK');
+        </script>
+        <!-- End Google Tag Manager -->
+
+        <script>
+            // Sandoll 백종열필 font
+            (function(d) {
+                var config = {
+                        kitId: 'ayd5bpn',
+                        scriptTimeout: 3000,
+                        async: true
+                    },
+                    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+            })(document);
+        </script>
+    </head>
+    <body class="scroll_bar">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript>
+            <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KRZF4NK" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+        </noscript>
+        <!-- End Google Tag Manager (noscript) -->
+
+
+        <div id="wrap">
+            <div class="loading">
+                <div id="loading"></div>
+            </div>
+
+            <!--header-->
+            <header>
+                <h1 id="logo">
+                    <a href="https://concern.or.kr/">
+                        <img src="./images/common/logo.png" alt="컨선월드와이드 로고">
+                    </a>
+                </h1>
+                <div class="donate_btn donate_btn_hd">
+                    <a href="https://donate.concern.or.kr/concern/pay/step1_direct?dontype=c21301&period=pledge&price=20000" target="_blank" title="지금 후원하기" class="donate_utm_link">지금 후원하기</a>
+                </div>
+            </header>
+            <!--//header-->
+
+            <!-- container -->
+            <div id="container">
+                <section id="section01">
+                    <div class="cont intro">
+                        <div class="paper paper01">
+                            <h2>컨선월드와이드의 아주 특별한 영수증</h2>
+                        </div>
+                        <div class="paper paper02"></div>
+                        <div class="paper paper03"></div>
+                        <div class="motion_json" id="introSticker"></div>
+                        <p class="pencil"></p>
+                        <button type="button" class="scroll_btn">
+                            <i></i>
+                            <span>Scroll</span>
+                        </button>
+                    </div>
+                    <div class="cont together">
+                        <div class="together_wrap">
+                            <div class="counter_wrap">
+                                <span>컨선이 지원 및 회복을 함께한 사람들</span>
+                                <div>
+                                    <p>
+                                        <strong id="counter"></strong><strong class="counter_text">39000000</strong><span>명</span>
+                                        <em>*2021년 한 해 기준</em>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="video_wrap">
+                                <div class="frame_box">
+                                    <iframe src="https://www.youtube-nocookie.com/embed/w829hhQLUPQ?rel=0"></iframe>
+                                </div>
+                            </div>
+                            <strong>우리의 관심이 만든 놀라운 변화<br>특별한 후원 영수증으로 투명하게 보여드릴게요!</strong>
+                            <div class="thumb_wrap">
+                                <span class="thumb01"><img src="./images/main/together_photo01.jpg" alt=""></span>
+                                <span class="thumb02"><img src="./images/main/together_photo02.jpg" alt=""></span>
+                                <span class="thumb03"><img src="./images/main/together_photo03.jpg" alt=""></span>
+                                <span class="thumb04"><img src="./images/main/together_photo04.jpg" alt=""></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="cont slogan">
+                        <div class="slogan_wrap">
+                            <strong>후원 영수증을 만드는 방법</strong>
+                            <div class="slogan_motion">
+                                <h3 id="slogan01">우리는<br>조금 <em>특별한 관심</em>을<br>갖습니다.</h3>
+                            </div>
+                            <span>1</span>
+                        </div>
+                    </div>
+                    <div class="cont attention">
+                        <!--<div class="about_wrap">
+                            <strong>세계기아지수 <span>GHI</span> 를 알고 계신가요?</strong>
+                            <dl>
+                                <dt>Global Hunger Index</dt>
+                                <dd>전 세계 지역 및 국가 차원에서<br>기아를 종합적으로 측정하고 추적하는 도구</dd>
+                            </dl>
+                            &lt;!&ndash;<div class="motion_json" id="cricleLine"></div>&ndash;&gt;
+                        </div>-->
+                        <!--<div class="tag_wrap">
+                            <div class="tag01">
+                                <strong>
+                                    <span>5세 미만</span>
+                                    <span>성장 발육 부진</span>
+                                </strong>
+                                <img src="./images/main/sec01_tagImg01.gif" alt="">
+                            </div>
+                            <div class="tag02">
+                                <strong>
+                                    <span>5세 미만</span>
+                                    <span>저체중 아동</span>
+                                </strong>
+                                <img src="./images/main/sec01_tagImg02.gif" alt="">
+                            </div>
+                            <div class="tag03">
+                                <strong>
+                                    <span>5세 이전</span>
+                                    <span>유아 사망률</span>
+                                    <span>측정</span>
+                                </strong>
+                                &lt;!&ndash;<img src="./images/main/sec01_tagImg03.jpg" alt="">&ndash;&gt;
+                            </div>
+                        </div>-->
+                        <div class="brush_wrap">
+                            <div class="motion_json brush_motion" id="brushPhoto"></div>
+                            <p><strong>한국 사회가 겪었던 그 고통은<br>여전히 다른 곳에 남아있습니다. </strong></p>
+                            <div class="brush_photo">
+                                <span class="photo01"><img src="./images/main/brush_photo01.png" alt=""></span>
+                                <span class="photo02"><img src="./images/main/brush_photo02.png" alt=""></span>
+                                <span class="photo03"><img src="./images/main/brush_photo03.png" alt=""></span>
+                            </div>
+                        </div>
+                        <!--<div class="ghi_wrap">
+                            <div class="text_wrap">
+                                <p><strong>어려운 곳의 아이들을 살피기 위해</strong></p>
+                                <p><strong>우리는 매년 세계기아지수 <span>GHI</span> 를 발간하고<br>특별한 관심이 필요한 곳을 찾아나섭니다.</strong></p>
+                            </div>
+                            <div class="magazine_wrap">
+                                <img src="./images/main/magazine.png" alt="">
+                                <div>
+                                    <p><strong>세계기아지수</strong>는 전 세계 기아 현황을<br>정확하고 객관적으로 보여주는 지표입니다.</p>
+                                    &lt;!&ndash;<button type="button" class="btn_popup">자세히 보기</button>&ndash;&gt;
+                                </div>
+                            </div>
+                        </div>-->
+                        <div class="dignity_wrap">
+                            <div class="text_wrap">
+                                <p class="text01"><strong>관심이 필요한 그 곳에서<br>아이들을 건강하게 지켜내는 일은</strong></p>
+                                <p class="text02"><strong>우리가 함께할 책임입니다.</strong></p>
+                                <p class="text03"><strong>세상의 미래인 아이들을 향한 관심</strong></p>
+                            </div>
+                            <p class="photo photo01"></p>
+                            <p class="photo photo02"></p>
+                            <p class="photo photo03"></p>
+                            <p class="photo photo04"></p>
+                            <p class="photo photo05"></p>
+                            <p class="photo photo06"></p>
+                        </div>
+                        <!--<div class="ghi_popup">
+                            <div class="popup_cont">
+                                <img src="./images/main/ghi_popup.jpg" alt="">
+                                <button type="button" class="btn_pop_close">닫기</button>
+                            </div>
+                        </div>-->
+                        <div class="banner_wrap">
+                            <p class="text_wrap">우리의 특별한 관심이 <em>24</em>개국의<br><span>변화</span>를 이끌어냈습니다.</p>
+                            <p class="sub_text_wrap">*2021년  한 해 기준 </p>
+                            <ul class="photo_wrap">
+                                <li class="photo01">
+                                    <img src="./images/main/sec01_bn01.jpg" alt="">
+                                    <div class="square_line" id="squareLine01_01"></div>
+                                </li>
+                                <li class="photo02">
+                                    <img src="./images/main/sec01_bn02.jpg" alt="">
+                                    <div class="square_line" id="squareLine01_02"></div>
+                                </li>
+                                <li class="photo03">
+                                    <img src="./images/main/sec01_bn03.jpg" alt="">
+                                    <div class="square_line" id="squareLine01_03"></div>
+                                </li>
+                                <li class="photo04">
+                                    <img src="./images/main/sec01_bn04.jpg" alt="">
+                                    <div class="square_line" id="squareLine01_04"></div>
+                                </li>
+                                <li class="photo05">
+                                    <img src="./images/main/sec01_bn05.jpg" alt="">
+                                    <div class="square_line" id="squareLine01_05"></div>
+                                </li>
+                                <li class="photo06">
+                                    <img src="./images/main/sec01_bn06.jpg" alt="">
+                                    <div class="square_line" id="squareLine01_06"></div>
+                                </li>
+                            </ul>
+                            <a href="https://donate.concern.or.kr/concern/pay/step1_direct?dontype=c21301&period=pledge&price=20000" target="_blank" class="donate_utm_link donate_btn">‘관심’ 함께하기</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="section02">
+                    <div class="cont slogan">
+                        <div class="slogan_wrap">
+                            <strong>특별한 후원 영수증을 위한 원칙</strong>
+                            <div class="slogan_motion">
+                                <h3 id="slogan02">우리는 매년<br>아주 <em>특별한 선택</em>을<br>합니다.</h3>
+                            </div>
+                            <span>2</span>
+                        </div>
+                    </div>
+                    <div class="cont selection">
+                        <div class="about_wrap">
+                            <strong>세계기아지수 <span>GHI</span> 를 알고 계신가요?</strong>
+                            <dl>
+                                <dt>Global Hunger Index</dt>
+                                <dd>전 세계 지역 및 국가 차원에서<br>기아를 종합적으로 측정하고 추적하는 도구</dd>
+                            </dl>
+                        </div>
+                        <div class="tag_wrap">
+                            <div class="tag01">
+                                <strong>
+                                    <span>5세 미만</span>
+                                    <span>성장 발육 부진</span>
+                                </strong>
+                                <img src="./images/main/sec01_tagImg01.gif" alt="">
+                            </div>
+                            <div class="tag02">
+                                <strong>
+                                    <span>5세 미만</span>
+                                    <span>저체중 아동</span>
+                                </strong>
+                                <img src="./images/main/sec01_tagImg02.gif" alt="">
+                            </div>
+                            <div class="tag03">
+                                <strong>
+                                    <span>5세 이전</span>
+                                    <span>유아 사망률</span>
+                                    <span>측정</span>
+                                </strong>
+                                <!--<img src="./images/main/sec01_tagImg03.jpg" alt="">-->
+                            </div>
+                            <div class="tag04">
+                                <strong>
+                                    <span>영양결핍</span>
+                                    <span> 인구 비율</span>
+                                </strong>
+                            </div>
+                        </div>
+                        <div class="ghi_wrap">
+                            <div class="text_wrap">
+                                <!--<p><strong>어려운 곳의 아이들을 살피기 위해</strong></p>-->
+                                <p><strong>우리는 매년 세계기아지수 <span>GHI</span> 를 발간하고<br>특별한 관심이 필요한 곳을 찾아나섭니다.</strong></p>
+                            </div>
+                            <div class="magazine_wrap">
+                                <img src="./images/main/magazine.png" alt="">
+                                <div>
+                                    <p><strong>세계기아지수</strong>는 전 세계 기아 현황을<br>정확하고 객관적으로 보여주는 지표입니다.</p>
+                                    <!--<button type="button" class="btn_popup">자세히 보기</button>-->
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="title_wrap">
+                            <strong>활동 국가를 최대 <span>30</span>개국으로 한정하여<br>가장 어려운 삶을 사는 <span><em>0.5%</em></span>를 찾아냅니다.</strong>
+                            <p><img src="./images/main/globe.png" alt=""></p>
+                        </div>
+                        <div class="area_wrap">
+                            <div>
+                                <p>도움이 절실한 사람들을 우선적으로 돕고<br><span>완전한 자립</span>을 이루면, 또 다른 곳으로 이동합니다.</p>
+                                <!--<em>*2021년 사업 보고 기준</em>-->
+                            </div>
+                            <p class="bg"></p>
+                        </div>
+                        <div class="dignity_wrap">
+                            <div class="text_wrap">
+                                <!--<p class="text01">우리는 단순히 구호품을 전달하기보다</p>-->
+                                <!--<p class="text02">고통을 겪고 있는 삶 속에서<br>개인의 존엄성을 지켜냅니다.</p>-->
+                                <p class="text02">우리는 구호품 전달을 넘어<br>한 사람의 존엄성을 지키기 위해 노력합니다.</p>
+                            </div>
+                            <p class="photo photo01"></p>
+                            <p class="photo photo02"></p>
+                            <p class="photo photo03"></p>
+                        </div>
+                        <div class="banner_wrap">
+                            <p class="text_wrap">우리의 특별한 선택은 영양실조와 재난현장에서 고통받는 <br><em>31,800,000</em>명의 <span>존엄성</span>을 지켜냈습니다.</p>
+                            <p class="sub_text_wrap">*2021년  한 해 기준 </p>
+                            <ul class="photo_wrap">
+                                <li class="photo01">
+                                    <img src="./images/main/sec02_bn01.jpg" alt="">
+                                    <div class="square_line" id="squareLine02_01"></div>
+                                </li>
+                                <li class="photo02">
+                                    <img src="./images/main/sec02_bn02.jpg" alt="">
+                                    <div class="square_line" id="squareLine02_02"></div>
+                                </li>
+                                <li class="photo03">
+                                    <img src="./images/main/sec02_bn03.jpg" alt="">
+                                    <div class="square_line" id="squareLine02_03"></div>
+                                </li>
+                                <li class="photo04">
+                                    <img src="./images/main/sec02_bn04.jpg" alt="">
+                                    <div class="square_line" id="squareLine02_04"></div>
+                                </li>
+                                <li class="photo05">
+                                    <img src="./images/main/sec02_bn05.jpg" alt="">
+                                    <div class="square_line" id="squareLine02_05"></div>
+                                </li>
+                                <li class="photo06">
+                                    <img src="./images/main/sec02_bn06.jpg" alt="">
+                                    <div class="square_line" id="squareLine02_06"></div>
+                                </li>
+                            </ul>
+                            <a href="https://donate.concern.or.kr/concern/pay/step1_direct?dontype=c21301&period=pledge&price=20000" target="_blank" class="donate_utm_link donate_btn">‘선택’ 지지하기</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="section03">
+                    <div class="cont slogan">
+                        <div class="slogan_wrap">
+                            <strong>변화를 만드는 후원 영수증</strong>
+                            <div class="slogan_motion">
+                                <h3 id="slogan03">우리는<br>조금 <em>남다른 실천</em>을<br>합니다.</h3>
+                            </div>
+                            <span>3</span>
+                        </div>
+                    </div>
+                    <div class="cont action">
+                        <div class="title_wrap">
+                            <p>우리는 가난의 순환을 끊어낼 수 있는<br>특별한 방법을 알고 있습니다.</p>
+                        </div>
+                        <div class="tag_wrap">
+                            <div class="tag01">
+                                <strong>
+                                    <span>영양이 풍부한</span>
+                                    <span>간식 개발</span>
+                                </strong>
+                                <img src="./images/main/sec03_tagImg01.gif" alt="">
+                            </div>
+                            <div class="tag02">
+                                <strong>
+                                    <span>지역 맞춤형</span>
+                                    <span>농업지원</span>
+                                </strong>
+                                <img src="./images/main/sec03_tagImg02.gif" alt="">
+                            </div>
+                            <div class="tag03">
+                                <strong><span>기후변화 대응</span></strong>
+                                <!--<img src="./images/main/sec03_tagImg03.jpg" alt="">-->
+                            </div>
+                        </div>
+                        <div class="sprout_wrap">
+                            <strong>진정한 자립을 이끌어내는 특별한 실천을 합니다.</strong>
+                            <p class="sprout_img">
+                                <span><img src="./images/main/sprout_img01.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img02.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img03.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img04.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img05.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img06.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img07.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img08.png" alt=""></span>
+                                <span><img src="./images/main/sprout_img09.png" alt=""></span>
+                            </p>
+                        </div>
+                        <div class="subject_wrap">
+                            <div class="subject01">
+                                <div class="intro_wrap">
+                                    <div class="title_wrap">
+                                        <em>Subject:</em>
+                                        <div>
+                                            <strong>
+                                                <span class="typo_motion">영</span>
+                                                <span class="typo_motion">양</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">간</span>
+                                                <span class="typo_motion">식</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">개</span>
+                                                <span class="typo_motion">발</span>
+                                            </strong>
+                                            <strong>
+                                                <span class="typo_motion">영</span>
+                                                <span class="typo_motion">양</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">간</span>
+                                                <span class="typo_motion">식</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">개</span>
+                                                <span class="typo_motion">발</span>
+                                            </strong>
+                                        </div>
+                                        <span>Lishe Poa(더 나은 삶을 위한 영양)</span>
+                                    </div>
+                                    <div class="img_wrap">
+                                        <span class="subject_img01"><img src="./images/main/subject01_01.png" alt=""></span>
+                                        <span class="subject_img02"><img src="./images/main/subject01_02.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="about_wrap">
+                                    <strong>영양 간식 개발</strong>
+                                    <div>
+                                        <dl>
+                                        	<dt>Target:</dt>
+                                        	<dd>빈민촌 아동과 임산부</dd>
+                                        	<!--<dd>빈민촌 아동과 임산부 <em>1,500,000</em>만 명</dd>-->
+                                        </dl>
+                                        <!--<dl>
+                                            <dt>Period:</dt>
+                                            <dd><em>2018.7~2023.3</em> <span>(5년간)</span></dd>
+                                        </dl>-->
+                                        <dl>
+                                            <dt>Nation:</dt>
+                                            <dd>
+                                                <p class="nation_txt">케냐 <img src="./images/main/flag_01.png" alt="케냐 국기"></p>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Details:</dt>
+                                            <dd>
+                                                <p class="detail_txt">
+                                                    빈민촌 사람들의 <strong>영양 불균형을 해소할</strong> 수 있도록<br>
+                                                    영양소가 풍부한 <strong>간식을 개발</strong>하고 더 나아가<br>
+                                                    영양 간식을 판매하도록 일터를 제공하여 <strong>소득 창출</strong>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="interview_wrap">
+                                    <div class="text_wrap">
+                                        <p>차파티를 팔아 아이들을<br>학교에 보낼 수 있어서 행복해요.</p>
+                                        <p>우리 마을에 건강한 먹거리를 제공하고 있다는<br>자부심으로 일하고 있습니다.</p>
+                                        <span>매크린 / 케냐(Kenya)</span>
+                                    </div>
+                                    <div class="bg"></div>
+                                    <div class="img_wrap">
+                                        <span class="photo_img01"><img src="./images/main/subject01_photo01.png" alt=""></span>
+                                        <span class="photo_img02"><img src="./images/main/subject01_photo02.png" alt=""></span>
+                                        <span class="photo_img03"><img src="./images/main/subject01_photo03.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="subject02">
+                                <div class="intro_wrap">
+                                    <div class="title_wrap">
+                                        <em>Subject:</em>
+                                        <div>
+                                            <strong>
+                                                <span class="typo_motion">가</span>
+                                                <span class="typo_motion">정</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">텃</span>
+                                                <span class="typo_motion">밭</span>
+                                            </strong>
+                                            <strong>
+                                                <span class="typo_motion">가</span>
+                                                <span class="typo_motion">정</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">텃</span>
+                                                <span class="typo_motion">밭</span>
+                                            </strong>
+                                        </div>
+                                        <span>Kitchen Garden</span>
+                                    </div>
+                                    <div class="img_wrap">
+                                        <span class="subject_img01"><img src="./images/main/subject02_01.png" alt=""></span>
+                                        <span class="subject_img02"><img src="./images/main/subject02_02.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="about_wrap">
+                                    <strong>가정 텃밭</strong>
+                                    <div>
+                                        <dl>
+                                            <dt>Target:</dt>
+                                            <dd>여성 가장</dd>
+                                        </dl>
+                                        <!--<dl>
+                                            <dt>Period:</dt>
+                                            <dd>2년간</dd>
+                                        </dl>-->
+                                        <dl>
+                                            <dt>Nation:</dt>
+                                            <dd>
+                                                <p class="nation_txt">차드 <img src="./images/main/flag_02.png" alt="차드 국기"></p>
+                                                <p class="nation_txt">라이베리아 <img src="./images/main/flag_03.png" alt="라이베리아 국기"></p>
+                                                <p class="nation_txt">부룬디 <img src="./images/main/flag_04.png" alt="부룬디 국기"></p>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Details:</dt>
+                                            <dd>
+                                                <p class="detail_txt">
+                                                    가정에서 <strong>텃밭을 가꿀 수 있는 환경</strong>을 마련하여<br>
+                                                    <strong>먹거리</strong>를 확보하고, <strong>수익</strong>까지 이어지도록 지원
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="interview_wrap">
+                                    <div class="text_wrap">
+                                        <p>텃밭에서 자란 채소와 과일을 먹은 지<br>몇 개월 만에 아이들 건강이 많이 회복됐어요.</p>
+                                        <p>저는 요즘 이웃에게 제가 배운 비법을 공유해요.<br>아이를 건강하게 키우기 위한 최선의 방법이<br>무엇인지 알게 되었으니까요!</p>
+                                        <span>에스페렌스 / 부룬디(Burundi)</span>
+                                    </div>
+                                    <div class="bg"></div>
+                                    <div class="img_wrap">
+                                        <span class="photo_img01"><img src="./images/main/subject02_photo01.png" alt=""></span>
+                                        <span class="photo_img02"><img src="./images/main/subject02_photo02.png" alt=""></span>
+                                        <span class="photo_img03"><img src="./images/main/subject02_photo03.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--<div class="subject03">
+                                <div class="intro_wrap">
+                                    <div class="title_wrap">
+                                        <em>Subject:</em>
+                                        <div>
+                                            <strong>
+                                                <span class="typo_motion">마</span>
+                                                <span class="typo_motion">더</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">그</span>
+                                                <span class="typo_motion">룹</span>
+                                            </strong>
+                                            <strong>
+                                                <span class="typo_motion">마</span>
+                                                <span class="typo_motion">더</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">그</span>
+                                                <span class="typo_motion">룹</span>
+                                            </strong>
+                                        </div>
+                                        <span>Mother's Group</span>
+                                    </div>
+                                    <div class="img_wrap">
+                                        <span class="subject_img01"><img src="./images/main/subject03_01.png" alt=""></span>
+                                        <span class="subject_img02"><img src="./images/main/subject03_02.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="about_wrap">
+                                    <strong>마더 그룹</strong>
+                                    <div>
+                                        <dl>
+                                            <dt>Target:</dt>
+                                            <dd>임산부나 5세 미만 아이의 엄마</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Period:</dt>
+                                            <dd>상시</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Nation:</dt>
+                                            <dd>
+                                                <p class="nation_txt">라이베리아 <img src="./images/main/flag_03.png" alt="라이베리아 국기"></p>
+                                                <p class="nation_txt">말라위 <img src="./images/main/flag_05.png" alt="말라위 국기"></p>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Details:</dt>
+                                            <dd>
+                                                <ul>
+                                                    <li>- 지역사회 보건요원을 채용하고 훈련,</li>
+                                                    <li>- 아이의 영양과 관련된 올바른 정보 교환</li>
+                                                </ul>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="interview_wrap">
+                                    <div class="text_wrap">
+                                        <p>마더 그룹이 있기 전에는<br>젠더 평등에 대해 접할 기회가 없었어요.</p>
+                                        <p>컨선 덕분에 이제 우리 마을 여성들이 어떻게<br>스스로 당당하게 지낼 수 있는지 알게 됐어요.</p>
+                                        <span>에스더 / 라이베리아 (Liberia)</span>
+                                    </div>
+                                    <div class="bg"></div>
+                                    <div class="img_wrap">
+                                        <span class="photo_img01"><img src="./images/main/subject03_photo01.png" alt=""></span>
+                                        <span class="photo_img02"><img src="./images/main/subject03_photo02.png" alt=""></span>
+                                        <span class="photo_img03"><img src="./images/main/subject03_photo03.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>-->
+                            <div class="subject04">
+                                <div class="intro_wrap">
+                                    <div class="title_wrap">
+                                        <em>Subject:</em>
+                                        <div>
+                                            <strong>
+                                                <span class="typo_motion">기</span>
+                                                <span class="typo_motion">후</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">스</span>
+                                                <span class="typo_motion">마</span>
+                                                <span class="typo_motion">트</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">농</span>
+                                                <span class="typo_motion">업</span>
+                                            </strong>
+                                            <strong>
+                                                <span class="typo_motion">기</span>
+                                                <span class="typo_motion">후</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">스</span>
+                                                <span class="typo_motion">마</span>
+                                                <span class="typo_motion">트</span>
+                                                <span>&nbsp;</span>
+                                                <span class="typo_motion">농</span>
+                                                <span class="typo_motion">업</span>
+                                            </strong>
+                                        </div>
+                                        <span>Climate Smart Agriculture</span>
+                                    </div>
+                                    <div class="img_wrap">
+                                        <span class="subject_img01"><img src="./images/main/subject04_01.png" alt=""></span>
+                                        <span class="subject_img02"><img src="./images/main/subject04_02.png" alt=""></span>
+                                    </div>
+                                </div>
+                                <div class="about_wrap">
+                                    <strong>기후 스마트 농업</strong>
+                                    <div>
+                                        <dl>
+                                            <dt>Target:</dt>
+                                            <dd>기후 변화로 식량 확보가 어려운 사람들</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Nation:</dt>
+                                            <!--<dt>Period &<br>Nation:</dt>-->
+                                            <dd>
+                                                <p class="nation_txt">말라위 <img src="./images/main/flag_01.png" alt="말라위 국기"></p>
+                                                <p class="nation_txt">차드 <img src="./images/main/flag_02.png" alt="차드 국기"></p>
+                                            </dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>Details:</dt>
+                                            <dd>
+                                                <p class="detail_txt">
+                                                    홍수, 가뭄 등의 기후위기에도<br>
+                                                    <strong>견딜 수 있는 농업 기술</strong>을 전파해<br>
+                                                    생계를 유지할 수 있도록 지원
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </div>
+                                <div class="interview_wrap">
+                                    <div class="text_wrap">
+                                        <p>기후 스마트 농업 덕분에 옥수수 수확량이<br>8배나 늘어났어요!</p>
+                                        <p>시장에 팔아서 번 돈으로 더이상<br>아이들을 굶기지 않고<br>학교도 보낼 수 있게 되었어요!</p>
+                                        <span>에시메 / 말라위(Malawi)</span>
+                                    </div>
+                                    <div class="bg"></div>
+                                    <div class="img_wrap">
+                                        <span class="photo_img01"><img src="./images/main/subject04_photo01.png" alt=""></span>
+                                        <span class="photo_img02"><img src="./images/main/subject04_photo02.png" alt=""></span>
+                                        <span class="photo_img03"><img src="./images/main/subject04_photo03.png" alt=""></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="banner_wrap">
+                            <p class="text_wrap">우리의 남다른 실천은 가난이 반복되는<br><em>7,200,000</em>명의 <span>자립</span>을 도왔습니다.</p>
+                            <p class="sub_text_wrap">*2021년  한 해 기준 </p>
+                            <ul class="photo_wrap">
+                                <li class="photo01">
+                                    <img src="./images/main/sec03_bn01.jpg" alt="">
+                                    <div class="square_line" id="squareLine03_01"></div>
+                                </li>
+                                <li class="photo02">
+                                    <img src="./images/main/sec03_bn02.jpg" alt="">
+                                    <div class="square_line" id="squareLine03_02"></div>
+                                </li>
+                                <li class="photo03">
+                                    <img src="./images/main/sec03_bn03.jpg" alt="">
+                                    <div class="square_line" id="squareLine03_03"></div>
+                                </li>
+                                <li class="photo04">
+                                    <img src="./images/main/sec03_bn04.jpg" alt="">
+                                    <div class="square_line" id="squareLine03_04"></div>
+                                </li>
+                                <li class="photo05">
+                                    <img src="./images/main/sec03_bn05.jpg" alt="">
+                                    <div class="square_line" id="squareLine03_05"></div>
+                                </li>
+                                <li class="photo06">
+                                    <img src="./images/main/sec03_bn06.jpg" alt="">
+                                    <div class="square_line" id="squareLine03_06"></div>
+                                </li>
+                            </ul>
+                            <a href="https://donate.concern.or.kr/concern/pay/step1_direct?dontype=c21301&period=pledge&price=20000" target="_blank" class="donate_utm_link donate_btn">‘실천’ 응원하기</a>
+                        </div>
+                    </div>
+                </section>
+                <section id="section04">
+                    <div class="cont years">
+                        <div class="motion_json" id="yearsCount"></div>
+                        <div class="motion_json" id="seaShip"></div>
+                    </div>
+                    <div class="cont voyage">
+                        <div class="title_wrap">
+                            <p><strong>나이지리아 비아프라의 내전 당시,<br>극심한 배고픔과 질병의 고통을 겪던 사람들이 있었습니다.</strong></p>
+                            <p><strong>이들을 돕고 싶었던 평범한 두 청년은 모금을 통해<br>의약품과 식량을 가득 채운 구호선을 띄웠고,</strong></p>
+                            <p><strong>26일만에 5톤의 구호물품을 담은 배가 그들에게 닿았습니다. </strong></p>
+                            <p><strong>그렇게 <span>컨선월드와이드</span>의 특별한 항해가 시작됐습니다.</strong></p>
+                        </div>
+                    </div>
+                </section>
+                <section id="section05">
+                    <div class="cont ending">
+                        <div class="text_wrap">
+                            <strong>그러나 여전히<br>우리의 관심이 절실한 곳이<br>많습니다.</strong>
+                            <strong>단 한 명도 포기할 수 없기에<br>우리의 노력은 멈출 수 없습니다</strong>
+                            <strong>우리의 특별한 후원 영수증은<br>따뜻한 관심이 모여 채워집니다</strong>
+                            <strong>변화를 만드는 아주 특별한 후원 영수증<br><span>지금 함께해주세요!</span></strong>
+
+                            <p class="people people01"></p>
+                            <p class="people people02"></p>
+                            <p class="people people03"></p>
+                            <p class="people people04"></p>
+                            <p class="people people05"></p>
+                            <p class="people people06"></p>
+                            <p class="people people07"></p>
+                        </div>
+                        <div class="motion_json ending_circle" id="circleEnding"></div>
+                    </div>
+                    <div class="cont sticker">
+                        <img src="./images/main/sticker_tit.png" alt="컨선월드와이드 X 2kooong">
+                        <img src="./images/main/sticker.png" alt="">
+                        <strong>정기 후원으로 참여하신 분들께 <br><a href="https://www.instagram.com/2kooong/?igshid=YmMyMTA2M2Y%3D" target="_blank">@2kooong</a> 작가님의 스티커 세트를 보내드립니다.</strong>
+                        <p>*첫 후원금 납입 확인 후 순차 발송</p>
+                    </div>
+                    <div class="cont outro">
+                        <div class="motion_json" id="outroMotion"></div>
+                        <div class="donate_wrap">
+                            <a href="https://donate.concern.or.kr/concern/pay/step1_direct?dontype=c21301&period=pledge&price=20000" target="_blank" class="donate_utm_link donate_btn">지금 함께하기</a>
+                        </div>
+                        <p class="outro_pencil"></p>
+                        <!--footer-->
+                        <footer id="footer">
+                            <ul>
+                                <li>
+                                    <span>재단법인 컨선월드와이드 한국</span>
+                                </li>
+                            	<li>
+                                    <span><strong>고유번호</strong> 276-82-00049</span>
+                                    <span><strong>대표자</strong> 이준모</span>
+                                    <span><strong>연락처</strong> 02-324-3900</span>
+                                </li>
+                                <li>
+                                    <span><strong>이메일</strong> info.korea@concern.net</span>
+                                    <span><strong>주소</strong> 04034 서울시 마포구 양화로 11길 12, 5층(서교동, 현담빌딩)</span>
+                                </li>
+                            </ul>
+                            <p>COPYRIGHT &copy; 2022 Concern Worldwide Korea. All rights reserved.</p>
+                        </footer>
+                        <!--//footer-->
+                    </div>
+                </section>
+            </div>
+
+            <nav id="nav">
+                <div data-href="#section01" class="nav01 active">
+                    <strong>1</strong>
+                    <p><span></span></p>
+                </div>
+                <div data-href="#section02" class="nav02">
+                    <strong>2</strong>
+                    <p><span></span></p>
+                </div>
+                <div data-href="#section03" class="nav03">
+                    <strong>3</strong>
+                    <p><span></span></p>
+                </div>
+                <div data-href="#section04" class="nav04">
+                    <strong>4</strong>
+                    <p><span></span></p>
+                </div>
+                <div data-href="#section05" class="nav05">
+                    <strong>5</strong>
+                    <p><span></span></p>
+                </div>
+            </nav>
+
+            <div class="barcode_wrap">
+                <span>컨선월드와이드 바코드</span>
+            </div>
+
+            <!--<div class="youtube_wrap">
+                <a href="#" target="_blank"><img src="./images/common/youtube_thumb.jpg" alt=""></a>
+                <button type="button" class="btn_close">팝업 닫기</button>
+            </div>-->
+            <!-- //container -->
+
+		<script src="./javascripts/plugin.js"></script>
+		<script src="./javascripts/design_common.js"></script>
+		</div>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
